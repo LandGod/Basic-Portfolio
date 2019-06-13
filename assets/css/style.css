@@ -1,0 +1,67 @@
+/* 
+CURRENT ISSUES/BUGS:
+-Title box with name in it wants to sit ouside of its enclosing div tag and anything that seems to fix that screws it up in another way.
+-Different div tags overlapping eachother
+-Issues placing links relative to the title box 
+-Things still rendering to a new line even though they should be inline, specifically my links at the top.
+-Using -8px margins to make things flush where they need to be. Is this best practice?
+
+
+*/
+
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 960px;
+    
+}
+
+span {
+    display: inline;
+}
+
+h1 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+br {
+    display: block;
+}
+
+#topPannelOuter {
+    margin-top: -8px;
+}
+
+#topPannelInner { 
+    width: 960px;
+    margin: -8px;
+    background-color: #FFFFFF;
+    border-bottom: solid 2px #cccccc;
+}
+
+.nav {
+    /* float: right; */  /* Is there a better way to do this?? */
+
+
+}
+
+#titleBox {
+    /* float: left; */  /* Trying to position this thing as left-justified is causing tons and tons of problems. Float is screwing me over hard here. */
+    /* position: absolute; */  /* If I don't set it to position: absolute it just doesn't even show up except as a couple blocks.*/
+    background-color: #4aaaa5;
+    color: grey; /* Making this grey temporarily so I can see where the text is when the box background is wiggin out. */
+    padding: 20px;
+    size: 10%;
+}
+
+.profilePic {
+    float: left;
+}
