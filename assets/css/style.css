@@ -29,6 +29,10 @@ br {
     clear: both;
 }
 
+hr {
+    border-top: 1px solid #cccccc;
+}
+
 p {
     font-size: 16pt;
 }
@@ -51,7 +55,7 @@ p {
 #mainSection {
     background-color: white;
     border: 1px solid #dddddd;
-    padding: 15px;
+    padding: 25px;
 }
 
 .nav {
@@ -86,5 +90,6 @@ p {
 
 .profilePic {
     float: left;
-    margin: 10px;
+    margin: 0px 10px 10px 0px;
+    padding-top: 5px;
 }
