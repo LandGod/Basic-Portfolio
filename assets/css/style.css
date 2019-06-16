@@ -7,11 +7,11 @@ body {
     background-image: url("../images/email-pattern.png");
 }
 
-.outerContainer {
-    margin: 0 auto; /* The zero is a tad redundatn since it already should be, but the auto, which will apply to L/R centers the element */
-    width: 960px; /* This is the perscribed width of all of our content (except for the 'empty' part of the header and footer.*/
+/* .outerContainer {
+    margin: 0 auto; 
+    width: 960px; 
     
-}
+} */
 
 a {
     text-decoration: none;
@@ -55,6 +55,8 @@ p {
 #mainSection {
     background-color: white;
     border: 1px solid #dddddd;
+    margin: 0px auto;
+    width: 908px;
     padding: 25px;
 }
 
@@ -90,6 +92,7 @@ p {
 .footer p {
     clear: both;
     font-size: 9pt;
+    color: white;
     position: absolute;
     bottom: -35px;
     right: 50%;
