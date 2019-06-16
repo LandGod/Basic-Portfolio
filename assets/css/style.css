@@ -7,21 +7,20 @@ body {
     background-image: url("../images/email-pattern.png");
 }
 
-/* .outerContainer {
-    margin: 0 auto; 
-    width: 960px; 
-    
-} */
+h1 {
+    /* Fonts and color */
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
 
 a {
+    /* Getting rid of the underline on links and making them grey. */
     text-decoration: none;
     color: #777777;
 }
 
-h1 {
-    /* Fonts */
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #4aaaa5;
+p {
+    font-size: 16pt;
 }
 
 br {
@@ -30,15 +29,20 @@ br {
 }
 
 hr {
+    /* For visible line break lines. */
     border-top: 1px solid #cccccc;
 }
 
-p {
-    font-size: 16pt;
+.noBreak {
+    /* Will add this to any block element that I don't want to linebreak. */
+    display: inline;
 }
+
+/* Begin Header Specific Styling */
 
 #topPannelOuter {
     /* This creates the part of the header that spans the whole page and has a grey boarder on the bottom */
+    /* Encloses the topPannelInner. */
     background-color: white;
     border-bottom: solid 2px #cccccc;
     margin-bottom: 30px;
@@ -46,18 +50,20 @@ p {
 }
 
 #topPannelInner {
-     /*This will create an area of the proper size, centered to contain our header content.  */
+     /* This will create an area of the proper size, centered to contain our header content. */
+     /* This element sits within the topPannelOuter. */
     width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#mainSection {
-    background-color: white;
-    border: 1px solid #dddddd;
-    margin: 0px auto;
-    width: 908px;
-    padding: 25px;
+#titleBox {
+    /* This is for the teal box with my name inside of it in white, which sits in the header on the left side. */
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px; 
+    display: inline-block;
+    margin: 0px;
 }
 
 .nav {
@@ -75,11 +81,31 @@ p {
     padding: 30px 0px;
 }
 
-.noBreak {
-    /* Will add this to any block element that I don't want to linebreak. */
-    display: inline;
+/* End header specific styling */
+
+/* Begin main section specific styling. */
+#mainSection {
+    background-color: white;
+    border: 1px solid #dddddd;
+
+    /* Margin L/R 'auto' centers the element */
+    margin: 0px auto;
+
+    /* To have our content area total only 960px we use: (960px) - (2 * padding) - (2 * border) */
+    width: 908px; 
+    padding: 25px;
 }
 
+.profilePic {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    padding-top: 5px;
+}
+
+/* End main section specific styling */
+
+
+/* Begin footer specific styling */
 .footer {
     clear: both;
     background-color: #666666;
@@ -90,26 +116,11 @@ p {
 }
 
 .footer p {
+    /* This for the 'copyright' text. */
     clear: both;
     font-size: 9pt;
     color: white;
     position: absolute;
     bottom: -35px;
     right: 50%;
-}
-
-#titleBox {
-    /* float: left; */
-    background-color: #4aaaa5;
-    color: white;
-    padding: 20px;
-    /* width: 25%; */
-    display: inline-block;
-    margin: 0px;
-}
-
-.profilePic {
-    float: left;
-    margin: 0px 10px 10px 0px;
-    padding-top: 5px;
 }
