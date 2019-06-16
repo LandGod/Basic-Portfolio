@@ -4,6 +4,7 @@ body {
     margin: 0px;
     padding: 0px;
     color: #777777;
+    background-image: url("../images/email-pattern.png");
 }
 
 .outerContainer {
@@ -28,8 +29,13 @@ br {
     clear: both;
 }
 
+p {
+    font-size: 16pt;
+}
+
 #topPannelOuter {
     /* This creates the part of the header that spans the whole page and has a grey boarder on the bottom */
+    background-color: white;
     border-bottom: solid 2px #cccccc;
     margin-bottom: 30px;
     width: 100%;
@@ -43,7 +49,9 @@ br {
 }
 
 #mainSection {
+    background-color: white;
     border: 1px solid #dddddd;
+    padding: 15px;
 }
 
 .nav {
@@ -78,4 +86,5 @@ br {
 
 .profilePic {
     float: left;
+    margin: 10px;
 }
