@@ -126,17 +126,55 @@ input {
     font-size: 16px;
 }
 
+/* Portfolio Boxes Styling */
+
+.displayBoxRow {
+    clear: both;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.displayBox {
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    margin: 0px 20px 0px 0px;
+    background-color: rgb(204, 204, 204);
+}
+
+.displayBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.displayBox h6 {
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: white;
+    background-color: #4aaaa5;
+    position: relative;
+    top: -50px;
+
+}
+
 /* End main section specific styling */
 
 
 /* Begin footer specific styling */
+/* BUG: This still does not display properly or consistently. */
 .footer {
     clear: both;
     background-color: #666666;
     border-top: 5px solid #4aaaa5;
     width: 100%;
     height: 50px;
-    margin-top: 30px;
+    margin: 30px 0 0 0;
 }
 
 .footer p {
@@ -148,5 +186,5 @@ input {
     padding: 0px;
     margin: 0px;
     right: 50%;
-    bottom: -35px;
+    bottom: -30px;
 }
