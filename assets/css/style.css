@@ -104,6 +104,11 @@ hr {
     padding-top: 5px;
 }
 
+.footerFixer {
+    /* Makes sure that  */
+    min-height: calc(100vh - 193px);
+}
+
 /* Form Styling: */
 
 form {
@@ -166,6 +171,10 @@ input {
 
 
 /* Begin footer specific styling */
+/* Note: A large part of the positioning for the footer is handled by the footerFixer class which wraps the main content area so
+    as to always push the footer down just enough to sit perfectly at the bottom of the page. That class is styled in the 
+    main content area section of this document as it is not actually part of the footer itself.*/
+
 .footer {
     clear: both;
     background-color: #666666;
@@ -183,6 +192,8 @@ input {
     position: relative;
     padding: 0px;
     margin: 0px;
-    right: -50%;
+    /* To actually center the copyright text we need to take it to 50% of the page width, but then back off by half the length
+        of the text itself, since we're placing its left edge, not its center. */
+    right: calc(-50% + 31.765px);
     bottom: -20px;
 }
