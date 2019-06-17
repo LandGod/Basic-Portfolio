@@ -167,7 +167,6 @@ input {
 
 
 /* Begin footer specific styling */
-/* BUG: This still does not display properly or consistently. */
 .footer {
     clear: both;
     background-color: #666666;
@@ -182,9 +181,9 @@ input {
     clear: both;
     font-size: 9pt;
     color: white;
-    position: absolute;
+    position: relative;
     padding: 0px;
     margin: 0px;
-    right: 50%;
-    bottom: -30px;
+    right: -50%;
+    bottom: -20px;
 }
