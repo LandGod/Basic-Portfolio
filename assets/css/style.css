@@ -39,6 +39,7 @@ hr {
     display: inline;
 }
 
+
 /* Begin Header Specific Styling */
 
 #topPannelOuter {
@@ -48,6 +49,7 @@ hr {
     border-bottom: solid 2px #cccccc;
     margin-bottom: 30px;
     width: 100%;
+    min-width: 960px;
 }
 
 #topPannelInner {
