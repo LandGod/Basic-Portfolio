@@ -31,6 +31,7 @@ br {
 hr {
     /* For visible line break lines. */
     border-top: 1px solid #cccccc;
+    margin-bottom: 30px;
 }
 
 .noBreak {
@@ -131,16 +132,13 @@ input {
 .displayBoxRow {
     clear: both;
     width: 100%;
-
-    margin: 0px;
-    padding: 0px;
 }
 
 .displayBox {
     display: inline-block;
     width: 300px;
     height: 250px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 30px 0px 0px;
     background-color: rgb(204, 204, 204);
 }
 
@@ -150,6 +148,7 @@ input {
 }
 
 .displayBox h6 {
+    /* BUG: Use of absolute positioning is causing extra space below the element which the a tag is wrapping around. */
     width: 100%;
     margin: 0px;
     padding: 10px 0px;
@@ -159,7 +158,7 @@ input {
     color: white;
     background-color: #4aaaa5;
     position: relative;
-    top: -50px;
+    bottom: 50px;
 
 }
 
