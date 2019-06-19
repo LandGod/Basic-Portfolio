@@ -177,7 +177,7 @@ input {
     as to always push the footer down just enough to sit perfectly at the bottom of the page. That class is styled in the 
     main content area section of this document as it is not actually part of the footer itself.*/
 
-.footer {
+footer {
     clear: both;
     background-color: #666666;
     border-top: 5px solid #4aaaa5;
@@ -186,7 +186,7 @@ input {
     margin: 30px 0 0 0;
 }
 
-.footer p {
+footer p {
     /* This for the 'copyright' text. */
     clear: both;
     font-size: 9pt;
